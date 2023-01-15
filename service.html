@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>株式会社TECH</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1 class="header__logo"><a href="index.html">TECH</a></h1>
+    <ul class="header__nav">
+      <li class="header__nav-list"><a href="index.html">ホーム</a></li>
+      <li class="header__nav-list"><a href="service.html">事業内容</a></li>
+      <li class="header__nav-list"><a href="blog.html">社員ブログ</a></li>
+      <li class="header__nav-list"><a href="company.html">会社概要</a></li>
+    </ul>
+    <nav class="drawer-nav" id="drawer-nav">
+      <ul class="drawer-nav__list">
+        <li class="drawer-nav__item"><a href="index.html">ホーム</a></li>
+        <li class="drawer-nav__item"><a href="service.html">事業内容</a></li>
+        <li class="drawer-nav__item"><a href="blog.html">社員ブログ</a></li>
+        <li class="drawer-nav__item"><a href="company.html">会社概要</a></li>
+      </ul>
+    </nav>
+    <div class="menu" id="menu">
+      <span class="menu__line--top"></span>
+      <span class="menu__line--middle"></span>
+      <span class="menu__line--bottom"></span>
+    </div>
+  </header>
+
+  <div class="sub-mv">
+    <h1 class="sub-mv__ttl">事業内容</h1>
+  </div>
+
+  <main>
+    <div class="sub-service">
+      <div class="sub-service__list">
+        <div class="sub-service__item">
+          <div class="sub-service__item-img"><img src="/img/service1.png" alt="IT人材育成事業"></div>
+          <div class="sub-service__item-detail">
+            <h2 class="sub-service__item-ttl">IT人材育成事業</h2>
+            <p class="sub-service__item-text">これまでに培った教育手法を生かして、短期間で即戦力のIT人材を育成します。</p>
+          </div>
+        </div>
+        <div class="sub-service__item">
+          <div class="sub-service__item-img"><img src="/img/service2.png" alt="コーチング事業"></div>
+          <div class="sub-service__item-detail">
+            <h2 class="sub-service__item-ttl">コーチング事業</h2>
+            <p class="sub-service__item-text">目標達成を最短で実現するために、プロのコーチによるマンツーマンのサポートを実施します。</p>
+          </div>
+        </div>
+        <div class="sub-service__item">
+          <div class="sub-service__item-img"><img src="/img/service3.png" alt="ITコンサル事業"></div>
+          <div class="sub-service__item-detail">
+            <h2 class="sub-service__item-ttl">ITコンサル事業</h2>
+            <p class="sub-service__item-text">経営戦略にIT戦略を策定し、システム開発の提案やシステムの最適化を通じて、企業の経営をサポートします。</p>
+          </div>
+        </div>
+        <div class="sub-service__item">
+          <div class="sub-service__item-img"><img src="/img/service4.png" alt="デジタルトランスフォーメーション事業"></div>
+          <div class="sub-service__item-detail">
+            <h2 class="sub-service__item-ttl">デジタルトランスフォーメーション事業</h2>
+            <p class="sub-service__item-text">人々の生活をよりよいものに変革するために様々なデジタル技術を活用し、革新的なソリューションやサービスを生み出します。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="common-contact">
+    <h2 class="common-contact__ttl">お問い合わせ</h2>
+    <p class="common-contact__text">お仕事のご依頼や採用に関してはお問い合わせにて承っております。</p>
+    <input type="button" id="openBtn" value="お問い合わせ" class="openBtn">
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        <div class="modal__content-inner">
+          <div class="modal__content-closeBtn">
+            <input type="button" id="closeBtn" class="closeBtn" value="×">
+          </div>
+          <h2 class="modal__content-ttl">お問い合わせ</h2>
+          <div class="modal__content-detail">
+            <form action="index.html" class="modal__content-form" method="POST">
+              <div class="modal__content-item">
+                <label for="company" class="modal__content-item-name">会社名</label>
+                <input type="text" id="company" class="modal__content-item-input">
+              </div>
+              <div class="modal__content-item">
+                <label for="name" class="modal__content-item-name">お名前<span>*</span></label>
+                <input type="text" id="name" class="modal__content-item-input" required>
+              </div>
+              <div class="modal__content-item">
+                <label for="email" class="modal__content-item-name">メールアドレス<span>*</span></label>
+                <input type="text" id="email" class="modal__content-item-input" required>
+              </div>
+              <div class="modal__content-item">
+                <label for="comment" class="modal__content-item-name">お問い合わせ内容<span>*</span></label>
+                <textarea id="comment" class="modal__content-item-textarea" cols="80" rows="8" required></textarea>
+              </div>
+              <input type="submit" class="modal__content-submit" value="お申し込み">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="scroll-top" id="button">↑</button>
+
+  <footer>
+    <div class="footer__wrap">
+      <small class="footer__copyright">©︎ 2020 TECH inc.</small>
+      <ul class="footer__nav">
+        <li class="footer__nav-list"><a href="index.html">ホーム</a></li>
+        <li class="footer__nav-list"><a href="service.html">事業内容</a></li>
+        <li class="footer__nav-list"><a href="blog.html">社員ブログ</a></li>
+        <li class="footer__nav-list"><a href="company.html">会社概要</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
